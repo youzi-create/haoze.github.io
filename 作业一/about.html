@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<style>
+  .context {
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    margin: auto;
+    font-size: 20px;
+    position: relative;
+  }
+
+  button {
+    position: absolute;
+    top: 220px;
+    left: 20px;
+  }
+</style>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">学生信息页面</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">首页</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">关于</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="table.html">表单</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="context">
+    这是关于页面
+    <br>
+    <span>这是一个导航栏，里面有三部分首页，表单关于，bootsrap的练习和静态页面的部署</span>
+    <button class="click">点击按钮</button>
+  </div>
+
+  <script>
+    const button = document.querySelector('.click')
+    button.addEventListener('click', () => {
+      alert('关注永雏塔菲,谢谢')
+    })
+  </script>
+</body>
+
+</html>
